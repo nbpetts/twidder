@@ -12,7 +12,8 @@ class UsersController < ApplicationController
   def create
   	@user = User.new(user_params)
   	if @user.save
-  		# we did it
+      flash[:success] = "Welcome to Twidder, Home of Brand New Ideas"
+  		redirect_to @user
   	else
   		render 'new'
   	end
