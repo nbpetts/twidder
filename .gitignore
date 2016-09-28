@@ -21,3 +21,6 @@
 
 # Ignore Spring files.
 /spring/*.pid
+
+# ignore upload test images. 
+/public/uploads
